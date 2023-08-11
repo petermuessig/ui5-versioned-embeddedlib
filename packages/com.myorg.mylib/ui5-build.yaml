@@ -1,0 +1,26 @@
+specVersion: "3.0"
+metadata:
+  name: &namespace com.myorg.mylib
+type: library
+framework:
+  name: OpenUI5
+  version: 1.117.0
+  libraries:
+    - name: sap.ui.core
+    - name: themelib_sap_horizon
+    - name: themelib_sap_fiori_3
+builder:
+  customTasks:
+  - name: ui5-tooling-stringreplace-task
+    beforeTask: replaceCopyright
+    configuration: &stringreplacerConfig
+      debug: true
+      files:
+        - "**/*.html"
+        - "**/*.json"
+        - "**/*.js"
+        - "**/*.xml"
+      replace:
+        - placeholder: __namespace__
+          value: com.myorg.mylib.v1_0_0
+          #value: ${package.name}-${package.version}

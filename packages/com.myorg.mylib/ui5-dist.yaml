@@ -1,0 +1,16 @@
+specVersion: "3.0"
+metadata:
+  name: __namespace__
+type: library
+resources:
+  configuration:
+    paths:
+      src: dist/resources/__namespace__/
+      test: dist/test-resources/__namespace__/
+framework:
+  name: OpenUI5
+  version: 1.117.0
+  libraries:
+    - name: sap.ui.core
+    - name: themelib_sap_horizon
+    - name: themelib_sap_fiori_3

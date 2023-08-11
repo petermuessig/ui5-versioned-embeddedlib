@@ -1,0 +1,14 @@
+{
+  "generator-ui5-app": {
+    "namespace": "com.myorg.myapp",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.117.0",
+    "author": "Peter Muessig",
+    "initrepo": false,
+    "appId": "com.myorg.myapp",
+    "appURI": "com/myorg/myapp",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "setupCompleted": true
+  }
+}

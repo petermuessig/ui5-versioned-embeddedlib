@@ -1,0 +1,22 @@
+{
+  "name": "ui5-versioned-embeddedlib",
+  "version": "1.0.0",
+  "description": "POC of versioned embedded library in UI5 application",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --ws",
+    "build:app": "npm run build -w com.myorg.myapp",
+    "build:lib": "npm run build -w com.myorg.mylib",
+    "start": "npm run start:app",
+    "start:app": "npm run start -w com.myorg.myapp",
+    "start:lib": "npm run start -w com.myorg.mylib",
+    "test": "npm run test --ws",
+    "test:app": "npm run test -w com.myorg.myapp",
+    "test:lib": "npm run test -w com.myorg.mylib",
+    "ncu": "ncu -ws --root"
+  },
+  "workspaces": [
+    "packages/com.myorg.mylib",
+    "packages/com.myorg.myapp"
+  ]
+}

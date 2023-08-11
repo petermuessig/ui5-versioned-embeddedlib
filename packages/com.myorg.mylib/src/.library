@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>__namespace__</name>
+	<vendor>Peter Muessig</vendor>
+	<version>${version}</version>
+	<copyright>${copyright}</copyright>
+	<title>__namespace__</title>
+	<documentation>Some description about __namespace__</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+</library>

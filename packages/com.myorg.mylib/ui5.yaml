@@ -1,0 +1,8 @@
+specVersion: "3.0"
+metadata:
+  name: com.myorg.mylib
+type: module
+resources:
+  configuration:
+    paths:
+      "/resources/com/myorg/mylib/v1_0_0/": "./dist/resources/__namespace__/"

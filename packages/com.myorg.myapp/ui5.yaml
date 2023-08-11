@@ -1,0 +1,19 @@
+specVersion: "3.0"
+metadata:
+  name: com.myorg.myapp
+type: application
+framework:
+  name: OpenUI5
+  version: "1.117.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: themelib_sap_horizon
+builder:
+  settings:
+    includeDependency:
+      - "com.myorg.mylib"
+server:
+  customMiddleware:
+    - name: ui5-middleware-livereload
+      afterMiddleware: compression
